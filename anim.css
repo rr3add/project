@@ -1,0 +1,33 @@
+.F { width:500px;
+font-family:verdena 11px;
+border: dotted 1px #002F2F;
+
+      }
+	  
+.DT { 
+border: dashed 1px #046380;  
+
+}
+
+
+.B {
+	border-bottom:1px  solid dashed 1px #375D81;
+	background-color:#ABC8E2;
+	color:#C4D7ED;
+	width:120px;
+	height:40px;
+	cursor:pointer;
+	}
+	
+	.DT:focus { 
+	border:	#006400;
+	}
+
+
+	
+	.B:hover { width:130px;
+	height:50px;
+	}
+	
+	a:link{color:blue;}
+	a:visited{color:red;}

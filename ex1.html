@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="anim.css">
+    <title>Fiche d'inscription</title>
+</head>
+<body>
+    <form method="POST" action="" class="F">
+      
+            <h2><span style="color: #FF00FF; text-align: center; ">Fiche d'inscription à une formation</span></h2>
+    
+        <fieldset style="padding: 2">
+            <legend><u><i>Je désire participer à une  Formation en  :</i></u></legend>
+           
+            <input type="checkbox" name="C2" value="ON"> CSS3
+            <input type="checkbox" name="C1" value="ON"> JAVA SCRIPT
+            <input type="checkbox" name="C3" value="ON"> HTML5
+            <p>Période de la formation :
+                <select size="1" class="DT" name="D1">
+                    <option selected>Vacances d'hiver</option>
+                    <option>Vacances d'été</option>
+                    <option>Vacances du printemps</option>
+                </select> 
+				<br><br>
+                Nombre d'heures/jours
+                <input type="text" name="T1" class="DT" size="6" value="4">
+            </p>
+        </fieldset>
+
+        <fieldset style="padding: 2">
+            <legend><u><i>Mes données personnelles :</i></u></legend>
+            <table width="100%">
+                <tr>
+                    <td><label for="Nom et prenom"><span style="font-size: 18px;">Nom et prénom :</span></label></td>
+                    <td><input type="text" name="T2" size="20" class="DT" required="required" id="Nom et prenom"></td>
+                </tr>
+                <tr>
+                    <td><span style="font-size: 18px;">Date de naissance :</span></td>
+                    <td><input type="date" required="required" name="T3" class="DT" size="17"></td>
+                </tr>
+                <tr>
+                    <td><span style="font-size: 18px;">E-mail :</span></td>
+                    <td><input type="email" name="T4" required="required" size="20"></td>
+                </tr>
+                <tr>
+                    <td><span style="font-size: 18px;">Tel :</span></td>
+                    <td><input type="tel" required="required" name="T5" class="DT" size="20" maxlength="15" pattern="^\+216[0-9]{2}-[0-9]{3}-[0-9]{3}"></td>
+                </tr>
+            </table>
+
+            <p><span style="font-size: 18px;">Niveau d'études :</span></p>
+            <label><input type="radio" value="V5" checked name="R1"> Bac</label>
+            <label><input type="radio" name="R1" value="V6"> Licence</label>
+            <label><input type="radio" name="R1" value="V7"> Maîtrise</label>
+            <label><input type="radio" name="R1" value="V8"> Master</label>
+        </fieldset>
+
+        <fieldset style="padding: 2">
+            <p><span style="font-size: 18px;">Motivation :</span></p>
+            <textarea rows="7" name="S1" cols="35" tabindex="50">Expliquer pourquoi vous voulez participer à cette formation</textarea>
+            <p style="text-align: center;">
+                <input type="submit" class="B" value="S'inscrire" name="B1">
+                <input type="reset" class="B" value="Réinitialiser" name="B2">
+            </p>
+        </fieldset>
+
+        <fieldset style="padding: 2">
+            <p style="text-align: center; ">Pour vous contacter, cliquez <a href="">ici</a></p>
+            <p style="text-align: center; ">Pour voir notre site, cliquez sur l'image suivante :</p>
+        </fieldset>
+    </form>
+</body>
+</html>

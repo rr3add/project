@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+    <link rel="stylesheet" href="formulaire.css">
+</head>
+<body>
+
+    <h2 class="titre-principal">Fiche d'inscription à une formation</h2>
+
+
+    <form action="#" method="post" id="inscriptionForm">
+        <fieldset>
+            <legend><i>Je désire participer à une :</i></legend>
+            Formation en :
+            <input type="checkbox" name="formation" value="html5" class="formation"> HTML5
+            <input type="checkbox" name="formation" value="css" class="formation"> CSS
+            <input type="checkbox" name="formation" value="javascript" class="formation"> JAVA SCRIPT
+            <br><br>
+        
+
+            Nombre d'heures/jour : <input type="number" name="heures" value="4" min="1">
+            <br><br>
+            Période de la formation :
+
+            <select name="periode" id="periodeFormation">
+                <option value="vacances_hiver">Session Octobre</option>
+                <option value="vacances_ete">Session Mars</option>
+            </select>
+            <br><br>
+
+        </fieldset><br>
+
+        <fieldset>
+            <legend><i>Mes données personnelles :</i></legend>
+            <table>
+                <tr>
+                    <td>Nom et prénom :</td>
+                    <td><input type="text" name="nom_prenom" id="nomPrénom"></td>
+                </tr>
+                <tr>
+                    <td>Date de naissance :</td>
+                    <td><input type="date" name="date_naissance"></td>
+                </tr>
+                <tr>
+                    <td>Email :</td>
+                    <td><input type="email" name="email" id="emailContact"></td>
+                </tr>
+                <tr>
+                    <td>Tél :</td>
+                    <td><input type="tel" name="telephone"></td>
+                </tr>
+                <tr>
+                    <td>Niveau d'études :</td>
+                    <td>
+                        <input type="radio" name="niveau" class="radio-input" value="bac" class="niveau"> BTS - Développement sur Internet
+                        <input type="radio" name="niveau" class="radio-input"  value="licence" class="niveau"> BTS - Informatique de Gestion
+                     
+                    </td>
+                </tr>
+            </table>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Message :</legend>
+            <textarea name="message" class="message" rows="5" cols="180"></textarea>
+        </fieldset>
+
+        <fieldset><br>
+            <input type="submit" value="S'inscrire">
+            <input type="reset" value="Rétablir">
+        </fieldset>
+    </form>
+
+    <p>Pour nous contacter, cliquer <a href="#" id="contact">ici</a></p>
+    <p>Pour voir notre site cliquer sur l'image suivante : <img src="image.jpg" alt="Image du site"></p>
+
+</body>
+</html>
